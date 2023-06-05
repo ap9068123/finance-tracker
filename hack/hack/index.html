@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Web Page</title>
+  <style>
+ 
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+ 
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f2f2f2;
+      padding: 20px;
+      border: solid  rgb(115, 35, 219) 1px;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 24px;
+      padding: auto;
+      color: rgb(115, 35, 219);
+    }
+
+    .j
+    {
+        border: none;
+      border-radius: 12px;
+      align-content: center;
+      color: rgb(115, 35, 219);
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li  
+    {
+        margin-right: 10px;
+      padding:  10px 10px 10px 10px ;
+     
+    }
+    nav ul li a
+    {
+        color: rgb(115, 35, 219);
+    }
+
+
+    .section {
+      margin: 50px;
+    }
+    
+    .caption {
+      float: left;
+      width: 40%;
+      margin-left: 50px;
+      margin-top: 100px;
+    }
+    
+    .caption h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: rgb(115, 35, 219);
+    }
+    
+    .caption p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: rgb(115, 35, 219);
+    }
+    
+    .caption button {
+      font-size: 15px;
+      padding: 7px 15px 7px 15px;
+      background-color: rgb(115, 35, 219);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .signin {
+      float: right;
+     width: 40%;
+      margin-right: 50px;
+      margin-top: 100px;
+      display: none;
+      color: rgb(115, 35, 219);
+      border: solid ;
+      padding-left: 30px;
+      padding-bottom: 20px;
+
+    
+    }
+    
+    .signin h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    
+    .signin input[type="text"],
+    .signin input[type="password"],
+    .signin input[type="submit"] {
+      width: 60%;
+      padding: 10px;
+      border: solid rgb(115, 35, 219) 2px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    
+    .signin input[type="submit"] {
+      background-color:  rgb(115, 35, 219);
+      width: 64%;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    
+    .switch {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .switch a {
+      color: #333;
+    }
+  </style>
+  <script>
+    
+    function toggleSections() {
+      var signupSection = document.getElementById('signup-section');
+      var signinSection = document.getElementById('signin-section');
+      
+      if (signupSection.style.display === 'block') {
+        signupSection.style.display = 'none';
+        signinSection.style.display = 'block';
+      } else {
+        signupSection.style.display = 'block';
+        signinSection.style.display = 'none';
+      }
+    }
+  </script>
+</head>
+<body>
+ 
+
+<header>
+    <div class="logo">CoinCount</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  </section>
+  
+  <div class="caption">
+    <h1>Achieving Your Financial Goals </h1>
+    <p>Welcome to CoinCount, the ultimate finance tracker and user-friendly finance tracker meticulously designed to empower individuals in taking charge of their financial well being.
+        With our comprehensive features and intuitive interface, we provide you with a powerful tool to effortlessly manage your finances,
+        track expenses, set budgets, and achieve your financial goals. Take your finances to next level.</p>
+    <button class="j">Join Us</button>
+  </div>
+  
+  <div id="signup-section" class="signin">
+    <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sign Up</h2>
+    <form method = "POST" action= "signup_proc.php">
+      <input type="text" id="name" name="name" placeholder="&#128100;  Name" required>
+      <input type="text" id="email" name= "email" placeholder="&#9993;  Email" required>
+      <input type="password" id ="password" name= "password"  placeholder="&#128065;  Password" required>
+      <input type="submit" value="&#10004;  Create Account">
+    </form>
+    <br>
+    <div class="switch">
+        Already a user ?  <a href="#" onclick="toggleSections()">Sign In</a>
+    </div>
+  </div>
+  
+  <div id="signin-section" class="signin">
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sign In</h2>
+    <form method="POST" action = "login.php">
+      <input type= "text" id="email" name= "email" placeholder="&#9993;  Email" required>
+      <input type="password" id ="password" name= "password"  placeholder="&#128065;  Password" required>
+      <input type="submit" value="&#10004;  Sign In">
+    </form>
+    <div class="switch">
+      <a href="#" onclick="toggleSections()">Sign Up</a>
+    </div>
+  </div>
+  
+  <script>
+    
+    document.getElementById('signup-section').style.display = 'block';
+  </script>
+  
+</body>
+</html>
