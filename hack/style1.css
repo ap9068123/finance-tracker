@@ -1,0 +1,176 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.transactions {
+    margin-right: 20px;
+    flex-grow: 1;
+    border:solid 2px rgb(115, 35, 219);
+    padding :40px 40px 40px 40px;
+}
+
+#transaction-form button
+{
+    background-color: rgb(115, 35, 219);
+    color:white;
+    border:solid 2px rgb(115, 35, 219);
+    border-radius: 2px;
+}
+
+#transaction-form input,button
+
+{
+    width:60%;
+    padding: 10px 10px 10px 10px;
+    border: solid 1px rgb(115, 35, 219);
+   
+}
+
+#transaction-form button:hover
+{
+
+    background-color: rgb(147, 94, 215);
+    
+}
+
+.add-transaction {
+    margin-left: 20px;
+    flex-grow: 1;
+    border:solid 2px rgb(115, 35, 219);
+}
+
+.total {
+    flex-basis: 100%;
+    margin-top: 20px;
+    text-align:center;
+
+    padding :30px 30px 30px 30px;
+    display: flex;
+}
+
+.p
+{
+ background-color: rgb(115, 35, 219);
+ color:white;
+ padding: 10px 10px 10px 10px;
+ border-radius: 2px;
+ font-size: 25px;
+}
+
+.q
+{
+ background-color: rgb(115, 35, 219);
+ color:white;
+ padding: 10px 10px 10px 10px;
+ border-radius: 2px;
+}
+
+
+
+.transaction-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.transaction-item button {
+    padding: 5px;
+    margin-left: 10px;
+    background-color:red;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.transaction-item button:hover {
+    background-color: #d74141;
+}
+
+tr,th,td{
+   padding: 5px 5px 5px 5px;
+}
+
+.transactions .c1
+{
+    background-color: #d4ac0d;;
+    color:white;
+    padding: 2px 2px 2px 2px ;
+}
+
+.transactions .c1:hover
+{
+    background-color: #ddc153;
+    color:white;
+   
+}
+
+
+.transactions .c2
+{
+    background-color: red;
+    padding: 2px 2px 2px 2px ;
+    color:white;
+}
+
+.transactions .c2 :hover
+{
+    background-color: rgb(241, 104, 104);
+    color:white;
+}
+
+
+input[type="submit"]{
+
+    background-color: rgb(115, 35, 219);
+    color:white;
+
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: solid  rgb(115, 35, 219) 1px;
+  }
+
+  .logo {
+    font-weight: bold;
+    font-size: 24px;
+    padding: auto;
+    color: rgb(115, 35, 219);
+  }
+
+  
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  nav ul li  
+  {
+      margin-right: 10px;
+    padding:  2px 2px 2px 2px ;
+   
+  }
+  nav ul li a
+  {
+      color: rgb(115, 35, 219);
+  }
+
+
